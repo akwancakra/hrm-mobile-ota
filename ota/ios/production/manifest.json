@@ -1,0 +1,13 @@
+{
+    "platform": "ios",
+    "channel": "production",
+    "runtimeVersion": "ios-1.0.0-hermes-rn081",
+    "version": 0,
+    "updateId": "ota-ios-production-v0",
+    "createdAt": "2026-06-07T00:00:00Z",
+    "bundleUrl": null,
+    "sha256": null,
+    "mandatory": false,
+    "disabled": true,
+    "message": "iOS OTA not yet available"
+}

@@ -1,13 +1,27 @@
 # HRM Mobile OTA
 
-Repository public untuk distribusi OTA JavaScript bundle HRM Mobile Android.
+Repository publik untuk distribusi OTA (Over-The-Air) bundle aplikasi HRM Mobile.
 
-Repo ini sengaja hanya berisi artifact OTA yang aman untuk public:
+Mendukung **Android** (saat ini) dan **iOS** (segera) dengan mekanisme custom OTA.
 
-- `ota/android/production/manifest.json`
-- `ota/android/production/bundles/*.zip`
+## Struktur Directory
 
-Jangan simpan source code aplikasi, `.env`, keystore, atau credential di repo ini.
+```
+ota/
+├── android/
+│   └── production/          ← Custom OTA untuk Android (aktif)
+│       ├── manifest.json
+│       └── bundles/*.zip
+│
+├── ios/
+│   └── production/          ← Custom OTA untuk iOS (segera)
+│       ├── manifest.json
+│       └── bundles/*.zip
+│
+└── expoupdates/
+    └── production/          ← Expo Updates self-hosted (mendatang)
+        └── ...
+```
 
 ## GitHub Pages
 
@@ -17,30 +31,21 @@ Aktifkan GitHub Pages dari:
 - Branch: `main`
 - Folder: `/ (root)`
 
-URL manifest production:
+URL manifest:
 
 ```text
-https://krisnasantosa15.github.io/hrm-mobile-ota/ota/android/production/manifest.json
+Android: https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/manifest.json
+iOS:     https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/manifest.json
 ```
 
-## Publish OTA
+## Keamanan
 
-Jalankan dari repo mobile/build folder yang pendek, misalnya `F:\hrm`:
+Repo ini hanya berisi artifact OTA yang aman untuk publik:
 
-```powershell
-powershell -ExecutionPolicy Bypass -File scripts/export-ota-android.ps1 `
-  -Version 1 `
-  -OtaRepoPath "D:\Projects\WebDevelopment\arsitekhijau\hrm-mobile-ota" `
-  -Message "Initial OTA update"
-```
+- Bundle JavaScript (sudah di-minify, tanpa source code asli)
+- Manifest JSON (metadata)
 
-Lalu commit dan push repo ini:
-
-```powershell
-git add .nojekyll README.md ota
-git commit -m "publish android ota v1"
-git push origin main
-```
+Jangan simpan source code aplikasi, `.env`, keystore, atau credential di repo ini.
 
 ## Rollback
 
