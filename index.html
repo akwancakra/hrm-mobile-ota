@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HRM Mobile OTA</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 640px;
+      margin: 48px auto;
+      padding: 0 24px;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1 { font-size: 24px; margin-bottom: 8px; }
+    p { color: #666; margin-bottom: 24px; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .card h2 { font-size: 16px; margin: 0 0 8px; }
+    .card p { font-size: 14px; margin: 0 0 4px; color: #666; }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    .badge-ok { background: #dcfce7; color: #16a34a; }
+    .badge-pending { background: #fef3c7; color: #d97706; }
+  </style>
+</head>
+<body>
+  <h1>HRM Mobile OTA</h1>
+  <p>Repository publik untuk distribusi OTA bundle aplikasi HRM Mobile.</p>
+
+  <div class="card">
+    <h2>📱 Android <span class="badge badge-ok">Active</span></h2>
+    <p>Channel: <code>production</code></p>
+    <p>Manifest: <a href="ota/android/production/manifest.json" target="_blank">ota/android/production/manifest.json</a></p>
+  </div>
+
+  <div class="card">
+    <h2>🍎 iOS <span class="badge badge-pending">Pending</span></h2>
+    <p>Channel: <code>production</code></p>
+    <p>Manifest: <a href="ota/ios/production/manifest.json" target="_blank">ota/ios/production/manifest.json</a></p>
+  </div>
+
+  <p style="font-size:13px;margin-top:32px;">
+    <a href="https://github.com/akwancakra/hrm-mobile-ota">GitHub</a>
+  </p>
+</body>
+</html>
