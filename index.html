@@ -4,57 +4,242 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HRM Mobile OTA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
   <style>
+    :root {
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8fafc;
+      --bg-tertiary: #f1f5f9;
+      --text-primary: #0f172a;
+      --text-secondary: #64748b;
+      --text-tertiary: #94a3b8;
+      --border: #e2e8f0;
+      --border-hover: #cbd5e1;
+      --accent: #3b82f6;
+      --success-bg: #f0fdf4;
+      --success-text: #16a34a;
+      --success-border: #bbf7d0;
+      --warning-bg: #fffbeb;
+      --warning-text: #d97706;
+      --warning-border: #fde68a;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-primary: #0f172a;
+        --bg-secondary: #1e293b;
+        --bg-tertiary: #162032;
+        --text-primary: #f1f5f9;
+        --text-secondary: #94a3b8;
+        --text-tertiary: #64748b;
+        --border: #334155;
+        --border-hover: #475569;
+        --accent: #60a5fa;
+        --success-bg: #052e16;
+        --success-text: #4ade80;
+        --success-border: #166534;
+        --warning-bg: #1c1400;
+        --warning-text: #fbbf24;
+        --warning-border: #92400e;
+      }
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      max-width: 640px;
-      margin: 48px auto;
-      padding: 0 24px;
-      line-height: 1.6;
-      color: #333;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 3rem 1.5rem;
     }
-    h1 { font-size: 24px; margin-bottom: 8px; }
-    p { color: #666; margin-bottom: 24px; }
-    a { color: #2563eb; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    .container { width: 100%; max-width: 560px; }
+    .header { margin-bottom: 2rem; }
+    .header-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+    .header-top i { font-size: 22px; color: var(--text-secondary); }
+    .header-top h1 { font-size: 20px; font-weight: 600; }
+    .header p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      padding-left: 32px;
+      line-height: 1.5;
+    }
     .card {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 12px;
+      transition: border-color 0.15s;
+    }
+    .card:hover { border-color: var(--border-hover); }
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .card-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .platform-icon {
+      width: 32px;
+      height: 32px;
       border-radius: 8px;
-      padding: 16px;
-      margin-bottom: 16px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
     }
-    .card h2 { font-size: 16px; margin: 0 0 8px; }
-    .card p { font-size: 14px; margin: 0 0 4px; color: #666; }
     .badge {
-      display: inline-block;
-      font-size: 12px;
-      padding: 2px 8px;
-      border-radius: 4px;
-      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 3px 9px;
+      border-radius: 99px;
+      letter-spacing: 0.02em;
     }
-    .badge-ok { background: #dcfce7; color: #16a34a; }
-    .badge-pending { background: #fef3c7; color: #d97706; }
+    .badge-ok {
+      background: var(--success-bg);
+      color: var(--success-text);
+      border: 1px solid var(--success-border);
+    }
+    .badge-pending {
+      background: var(--warning-bg);
+      color: var(--warning-text);
+      border: 1px solid var(--warning-border);
+    }
+    .badge-ok i { font-size: 7px; }
+    .badge-pending i { font-size: 11px; }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+    .card-meta i { font-size: 14px; }
+    .meta-chip {
+      background: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 2px 7px;
+      font-family: 'SFMono-Regular', Consolas, monospace;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+    .manifest-link {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12.5px;
+      color: var(--accent);
+      text-decoration: none;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
+    }
+    .manifest-link:hover { text-decoration: underline; }
+    .manifest-link i { font-size: 13px; }
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    .footer-label { font-size: 12.5px; color: var(--text-tertiary); }
+    .footer-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      text-decoration: none;
+    }
+    .footer-link:hover { color: var(--text-primary); }
+    .footer-link svg { width: 14px; height: 14px; }
+    .footer-link i { font-size: 11px; }
   </style>
 </head>
 <body>
-  <h1>HRM Mobile OTA</h1>
-  <p>Repository publik untuk distribusi OTA bundle aplikasi HRM Mobile.</p>
+  <div class="container">
+    <div class="header">
+      <div class="header-top">
+        <i class="ti ti-broadcast"></i>
+        <h1>HRM Mobile OTA</h1>
+      </div>
+      <p>Repository publik untuk distribusi OTA bundle aplikasi HRM Mobile.</p>
+    </div>
 
-  <div class="card">
-    <h2>📱 Android <span class="badge badge-ok">Active</span></h2>
-    <p>Channel: <code>production</code></p>
-    <p>Manifest: <a href="ota/android/production/manifest.json" target="_blank">ota/android/production/manifest.json</a></p>
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title">
+          <div class="platform-icon">🤖</div>
+          Android
+        </div>
+        <span class="badge badge-ok">
+          <i class="ti ti-circle-filled"></i>
+          Active
+        </span>
+      </div>
+      <div class="card-meta">
+        <i class="ti ti-git-branch"></i>
+        Channel: <span class="meta-chip">production</span>
+      </div>
+      <a href="ota/android/production/manifest.json" target="_blank" class="manifest-link">
+        <i class="ti ti-file-code"></i>
+        ota/android/production/manifest.json
+        <i class="ti ti-external-link"></i>
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title">
+          <div class="platform-icon">🍎</div>
+          iOS
+        </div>
+        <span class="badge badge-pending">
+          <i class="ti ti-clock"></i>
+          Pending
+        </span>
+      </div>
+      <div class="card-meta">
+        <i class="ti ti-git-branch"></i>
+        Channel: <span class="meta-chip">production</span>
+      </div>
+      <a href="ota/ios/production/manifest.json" target="_blank" class="manifest-link">
+        <i class="ti ti-file-code"></i>
+        ota/ios/production/manifest.json
+        <i class="ti ti-external-link"></i>
+      </a>
+    </div>
+
+    <div class="footer">
+      <span class="footer-label">akwancakra / hrm-mobile-ota</span>
+      <a href="https://github.com/akwancakra/hrm-mobile-ota" target="_blank" class="footer-link">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+        </svg>
+        GitHub
+        <i class="ti ti-external-link"></i>
+      </a>
+    </div>
   </div>
-
-  <div class="card">
-    <h2>🍎 iOS <span class="badge badge-pending">Pending</span></h2>
-    <p>Channel: <code>production</code></p>
-    <p>Manifest: <a href="ota/ios/production/manifest.json" target="_blank">ota/ios/production/manifest.json</a></p>
-  </div>
-
-  <p style="font-size:13px;margin-top:32px;">
-    <a href="https://github.com/akwancakra/hrm-mobile-ota">GitHub</a>
-  </p>
 </body>
 </html>
