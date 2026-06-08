@@ -2,12 +2,12 @@
   "platform": "ios",
   "channel": "production",
   "runtimeVersion": "ios-1.0.0-hermes-rn081",
-  "version": 1,
-  "updateId": "ota-ios-production-v1",
-  "createdAt": "2026-06-08T16:36:27Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v1.zip",
-  "sha256": "d6222b0eaecfb7d2f81e9bab662ffd6b29eeb9e839ac5a1f6d2cfd42a3692395",
+  "version": 2,
+  "updateId": "ota-ios-production-v2",
+  "createdAt": "2026-06-08T17:34:18Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v2.zip",
+  "sha256": "d9f283bde637ca8b44044868dd1b5d0edfdaa306d656bf46db1d551e191a39fa",
   "mandatory": false,
   "disabled": false,
-  "message": "First implementation"
+  "message": "Fix update sheet doesnt come up"
 }

@@ -2,12 +2,12 @@
   "platform": "android",
   "channel": "production",
   "runtimeVersion": "android-1.0.0-hermes-rn081",
-  "version": 1,
-  "updateId": "ota-android-production-v1",
-  "createdAt": "2026-06-08T16:35:50Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v1.zip",
-  "sha256": "ecb57748f8760d73a50ec03000bf76f8038cc904df2c6f1430bd01f8fdb19dec",
+  "version": 2,
+  "updateId": "ota-android-production-v2",
+  "createdAt": "2026-06-08T17:33:37Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v2.zip",
+  "sha256": "8463a45071ff789bbbc3dac6f6927510647743a66a4e9ea73b1944d68b027afc",
   "mandatory": false,
   "disabled": false,
-  "message": "First implementation"
+  "message": "Fix update sheet doesnt come up"
 }
