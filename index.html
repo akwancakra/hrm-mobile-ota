@@ -22,6 +22,9 @@
       --warning-bg: #fffbeb;
       --warning-text: #d97706;
       --warning-border: #fde68a;
+      --muted-bg: #f1f5f9;
+      --muted-text: #94a3b8;
+      --muted-border: #e2e8f0;
     }
     @media (prefers-color-scheme: dark) {
       :root {
@@ -40,6 +43,9 @@
         --warning-bg: #1c1400;
         --warning-text: #fbbf24;
         --warning-border: #92400e;
+        --muted-bg: #1e293b;
+        --muted-text: #64748b;
+        --muted-border: #334155;
       }
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -112,24 +118,35 @@
       border-radius: 99px;
       letter-spacing: 0.02em;
     }
-    .badge-ok {
+    .badge-active {
       background: var(--success-bg);
       color: var(--success-text);
       border: 1px solid var(--success-border);
     }
+    .badge-active i { font-size: 7px; }
     .badge-pending {
       background: var(--warning-bg);
       color: var(--warning-text);
       border: 1px solid var(--warning-border);
     }
-    .badge-ok i { font-size: 7px; }
     .badge-pending i { font-size: 11px; }
+    .badge-disabled {
+      background: var(--muted-bg);
+      color: var(--muted-text);
+      border: 1px solid var(--muted-border);
+    }
+    .badge-disabled i { font-size: 11px; }
     .card-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+    .card-meta-row {
       display: flex;
       align-items: center;
       gap: 6px;
-      font-size: 13px;
-      color: var(--text-secondary);
     }
     .card-meta i { font-size: 14px; }
     .meta-chip {
@@ -174,6 +191,7 @@
     .footer-link:hover { color: var(--text-primary); }
     .footer-link svg { width: 14px; height: 14px; }
     .footer-link i { font-size: 11px; }
+    .skeleton { opacity: 0.4; }
   </style>
 </head>
 <body>
@@ -186,20 +204,26 @@
       <p>Repository publik untuk distribusi OTA bundle aplikasi HRM Mobile.</p>
     </div>
 
-    <div class="card">
+    <div class="card" id="card-android">
       <div class="card-top">
         <div class="card-title">
           <div class="platform-icon">🤖</div>
           Android
         </div>
-        <span class="badge badge-ok">
-          <i class="ti ti-circle-filled"></i>
-          Active
+        <span class="badge badge-pending skeleton" id="badge-android">
+          <i class="ti ti-clock"></i>
+          Loading...
         </span>
       </div>
       <div class="card-meta">
-        <i class="ti ti-git-branch"></i>
-        Channel: <span class="meta-chip">production</span>
+        <div class="card-meta-row">
+          <i class="ti ti-git-branch"></i>
+          Channel: <span class="meta-chip">production</span>
+        </div>
+        <div class="card-meta-row skeleton" id="meta-android">
+          <i class="ti ti-hash"></i>
+          Version: <span class="meta-chip">-</span>
+        </div>
       </div>
       <a href="ota/android/production/manifest.json" target="_blank" class="manifest-link">
         <i class="ti ti-file-code"></i>
@@ -208,20 +232,26 @@
       </a>
     </div>
 
-    <div class="card">
+    <div class="card" id="card-ios">
       <div class="card-top">
         <div class="card-title">
           <div class="platform-icon">🍎</div>
           iOS
         </div>
-        <span class="badge badge-ok">
-          <i class="ti ti-circle-filled"></i>
-          Active
+        <span class="badge badge-pending skeleton" id="badge-ios">
+          <i class="ti ti-clock"></i>
+          Loading...
         </span>
       </div>
       <div class="card-meta">
-        <i class="ti ti-git-branch"></i>
-        Channel: <span class="meta-chip">production</span>
+        <div class="card-meta-row">
+          <i class="ti ti-git-branch"></i>
+          Channel: <span class="meta-chip">production</span>
+        </div>
+        <div class="card-meta-row skeleton" id="meta-ios">
+          <i class="ti ti-hash"></i>
+          Version: <span class="meta-chip">-</span>
+        </div>
       </div>
       <a href="ota/ios/production/manifest.json" target="_blank" class="manifest-link">
         <i class="ti ti-file-code"></i>
@@ -241,5 +271,66 @@
       </a>
     </div>
   </div>
+
+  <script>
+    const PLATFORMS = [
+      { name: "android", badgeId: "badge-android", metaId: "meta-android", manifestUrl: "ota/android/production/manifest.json" },
+      { name: "ios",     badgeId: "badge-ios",     metaId: "meta-ios",     manifestUrl: "ota/ios/production/manifest.json" },
+    ];
+
+    async function loadManifest(url) {
+      try {
+        const res = await fetch(url + "?t=" + Date.now());
+        if (!res.ok) return null;
+        return await res.json();
+      } catch {
+        return null;
+      }
+    }
+
+    function updateCard(platform) {
+      const badge = document.getElementById(platform.badgeId);
+      const meta = document.getElementById(platform.metaId);
+
+      loadManifest(platform.manifestUrl).then((m) => {
+        // Remove skeleton
+        badge.classList.remove("skeleton");
+        meta.classList.remove("skeleton");
+
+        if (!m) {
+          badge.className = "badge badge-disabled";
+          badge.innerHTML = '<i class="ti ti-cloud-off"></i> Unreachable';
+          meta.innerHTML = '<i class="ti ti-hash"></i> Version: <span class="meta-chip">-</span>';
+          return;
+        }
+
+        // Status badge
+        if (m.disabled) {
+          badge.className = "badge badge-disabled";
+          badge.innerHTML = '<i class="ti ti-ban"></i> Disabled';
+        } else if (m.bundleUrl && m.sha256) {
+          badge.className = "badge badge-active";
+          badge.innerHTML = '<i class="ti ti-circle-filled"></i> Active';
+        } else {
+          badge.className = "badge badge-pending";
+          badge.innerHTML = '<i class="ti ti-clock"></i> Pending';
+        }
+
+        // Version & info
+        let extra = `<i class="ti ti-hash"></i> Version: <span class="meta-chip">${m.version ?? "-"}</span>`;
+        if (m.bundleSize) {
+          const sizeMB = (m.bundleSize / (1024 * 1024)).toFixed(1);
+          extra += ` &nbsp;·&nbsp; <i class="ti ti-file-size"></i> Size: <span class="meta-chip">${sizeMB} MB</span>`;
+        }
+        if (m.message) {
+          const shortMsg = m.message.length > 40 ? m.message.slice(0, 40) + "…" : m.message;
+          extra += `<div class="card-meta-row" style="margin-top:2px"><i class="ti ti-message"></i> ${shortMsg}</div>`;
+        }
+        meta.innerHTML = extra;
+      });
+    }
+
+    PLATFORMS.forEach(updateCard);
+  </script>
 </body>
 </html>
