@@ -1,19 +1,13 @@
 {
-    "platform":  "android",
-    "channel":  "production",
-    "runtimeVersion":  "android-1.0.0-hermes-rn081",
-    "version":  1,
-    "updateId":  "ota-android-production-v1",
-    "createdAt":  "2026-06-08T15:20:18Z",
-    "bundleUrl":  "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v1.zip",
-    "sha256":  "786f8ef6da3b240f93c733fb9e6b81dc83dea425f590c207c18c494481a308d0",
-    "mandatory":  false,
-    "disabled":  false,
-    "message":  "Implement all feature",
-    "minAppVersion":  "",
-    "apkDownloadUrl":  "",
-    "changelog":  [
-
-                  ],
-    "bundleSize":  5561350
+  "platform": "android",
+  "channel": "production",
+  "runtimeVersion": "android-1.0.0-hermes-rn081",
+  "version": 1,
+  "updateId": "ota-android-production-v1",
+  "createdAt": "2026-06-08T16:35:50Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v1.zip",
+  "sha256": "ecb57748f8760d73a50ec03000bf76f8038cc904df2c6f1430bd01f8fdb19dec",
+  "mandatory": false,
+  "disabled": false,
+  "message": "First implementation"
 }

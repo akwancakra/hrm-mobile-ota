@@ -1,19 +1,13 @@
 {
-    "platform":  "ios",
-    "channel":  "production",
-    "runtimeVersion":  "ios-1.0.0-hermes-rn081",
-    "version":  1,
-    "updateId":  "ota-ios-production-v1",
-    "createdAt":  "2026-06-08T15:21:08Z",
-    "bundleUrl":  "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v1.zip",
-    "sha256":  "0ff591d19a897553828d06fcd8fad426e50ce24d97b7f6d4b74bb6bb535684c0",
-    "mandatory":  false,
-    "disabled":  false,
-    "message":  "Implement all feature",
-    "minAppVersion":  "",
-    "apkDownloadUrl":  "",
-    "changelog":  [
-
-                  ],
-    "bundleSize":  3491535
+  "platform": "ios",
+  "channel": "production",
+  "runtimeVersion": "ios-1.0.0-hermes-rn081",
+  "version": 1,
+  "updateId": "ota-ios-production-v1",
+  "createdAt": "2026-06-08T16:36:27Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v1.zip",
+  "sha256": "d6222b0eaecfb7d2f81e9bab662ffd6b29eeb9e839ac5a1f6d2cfd42a3692395",
+  "mandatory": false,
+  "disabled": false,
+  "message": "First implementation"
 }
