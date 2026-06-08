@@ -1,13 +1,19 @@
 {
-    "platform": "ios",
-    "channel": "production",
-    "runtimeVersion": "ios-1.0.0-hermes-rn081",
-    "version": 0,
-    "updateId": "ota-ios-production-v0",
-    "createdAt": "2026-06-07T00:00:00Z",
-    "bundleUrl": null,
-    "sha256": null,
-    "mandatory": false,
-    "disabled": true,
-    "message": "iOS OTA not yet available"
+    "platform":  "ios",
+    "channel":  "production",
+    "runtimeVersion":  "ios-1.0.0-hermes-rn081",
+    "version":  1,
+    "updateId":  "ota-ios-production-v1",
+    "createdAt":  "2026-06-08T15:21:08Z",
+    "bundleUrl":  "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v1.zip",
+    "sha256":  "0ff591d19a897553828d06fcd8fad426e50ce24d97b7f6d4b74bb6bb535684c0",
+    "mandatory":  false,
+    "disabled":  false,
+    "message":  "Implement all feature",
+    "minAppVersion":  "",
+    "apkDownloadUrl":  "",
+    "changelog":  [
+
+                  ],
+    "bundleSize":  3491535
 }
