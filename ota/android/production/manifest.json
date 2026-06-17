@@ -2,18 +2,19 @@
   "platform": "android",
   "channel": "production",
   "runtimeVersion": "android-1.0.0-hermes-rn081",
-  "version": 4,
-  "updateId": "ota-android-production-v4",
-  "createdAt": "2026-06-17T08:11:01Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v4.zip",
-  "sha256": "c70a598acb5b95b7aa314d3b870afb4f45f70bcd88dbe217bdeed9e7e055521d",
+  "version": 5,
+  "updateId": "ota-android-production-v5",
+  "createdAt": "2026-06-17T08:16:28Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v5.zip",
+  "sha256": "a4bedf446c9b803bd4b9edf4f17ab8e987e610aed302444bcde08870e4243de3",
   "mandatory": false,
   "disabled": false,
-  "message": "Push notification fix - channelId hrm-general",
+  "message": "Fix mandatori update + channel HRM",
   "minAppVersion": "1.0.1",
   "apkDownloadUrl": "https://drive.google.com/uc?export=download&id=1HfKYV-s76EWv21iffoozz8r_05lcT7ME",
   "changelog": [
-    "Perbaikan push notification"
+    "Perbaikan push notification",
+    "Perbaikan mandatori update"
   ],
-  "bundleSize": 5583397
+  "bundleSize": 5583450
 }
