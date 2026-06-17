@@ -2,16 +2,12 @@
   "platform": "android",
   "channel": "production",
   "runtimeVersion": "android-1.0.0-hermes-rn081",
-  "version": 13,
-  "updateId": "ota-android-production-v13",
-  "createdAt": "2026-06-17T13:22:57Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v13.zip",
-  "sha256": "c0b0a0b3035f8766b1326d4c1ebc226aaf0c507788a9318897244d0a7540113a",
+  "version": 14,
+  "updateId": "ota-android-production-v14",
+  "createdAt": "2026-06-17T13:33:34Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v14.zip",
+  "sha256": "5ec0a24bb4fe4bb1c5f4092a72ff0fa3a703ebdd7c70e67bc02d2067868ff7cb",
   "mandatory": false,
   "disabled": false,
-  "message": "v13 final",
-  "minAppVersion": "1.0.1",
-  "apkDownloadUrl": "https://drive.google.com/uc?export=download&id=1HfKYV-s76EWv21iffoozz8r_05lcT7ME",
-  "changelog": [],
-  "bundleSize": 5583567
+  "message": "feat: add CI/CD workflow to automate Android OTA updates via GitHub Actions"
 }
