@@ -2,18 +2,16 @@
   "platform": "android",
   "channel": "production",
   "runtimeVersion": "android-1.0.0-hermes-rn081",
-  "version": 6,
-  "updateId": "ota-android-production-v6",
-  "createdAt": "2026-06-17T08:25:52Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v6.zip",
-  "sha256": "b15d74adae8a31a59eb0aaca8fc40717fa2ef4b72d2c3472d70e89ba167133bd",
+  "version": 7,
+  "updateId": "ota-android-production-v7",
+  "createdAt": "2026-06-17T09:00:39Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v7.zip",
+  "sha256": "03aacff9ed1e18d68ca5c0606020267cbc9c6ad69a237090df7d8344de5c28c9",
   "mandatory": false,
   "disabled": false,
-  "message": "Fix mandatory update dismiss + bump version 1.0.1",
+  "message": "Fix crash fetchManifest",
   "minAppVersion": "1.0.1",
   "apkDownloadUrl": "https://drive.google.com/uc?export=download&id=1HfKYV-s76EWv21iffoozz8r_05lcT7ME",
-  "changelog": [
-    "Perbaikan fungsi dismiss mandatory update"
-  ],
-  "bundleSize": 5583560
+  "changelog": [],
+  "bundleSize": 5583563
 }
