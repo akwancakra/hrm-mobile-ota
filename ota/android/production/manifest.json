@@ -1,13 +1,19 @@
 {
-  "platform": "android",
-  "channel": "production",
-  "runtimeVersion": "android-1.0.0-hermes-rn081",
-  "version": 3,
-  "updateId": "ota-android-production-v3",
-  "createdAt": "2026-06-17T07:18:51Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v3.zip",
-  "sha256": "7a33f99863781fd196141b598d28bb0f40a6650cff44abd2480d93f49fdcc085",
-  "mandatory": false,
-  "disabled": false,
-  "message": "Sync after native build v1.0.8"
+    "platform":  "android",
+    "channel":  "production",
+    "runtimeVersion":  "android-1.0.0-hermes-rn081",
+    "version":  4,
+    "updateId":  "ota-android-production-v4",
+    "createdAt":  "2026-06-17T08:11:01Z",
+    "bundleUrl":  "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v4.zip",
+    "sha256":  "c70a598acb5b95b7aa314d3b870afb4f45f70bcd88dbe217bdeed9e7e055521d",
+    "mandatory":  false,
+    "disabled":  false,
+    "message":  "Push notification fix - channelId hrm-general",
+    "minAppVersion":  "",
+    "apkDownloadUrl":  "",
+    "changelog":  [
+
+                  ],
+    "bundleSize":  5583397
 }
