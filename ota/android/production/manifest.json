@@ -1,19 +1,19 @@
 {
-    "platform":  "android",
-    "channel":  "production",
-    "runtimeVersion":  "android-1.0.0-hermes-rn081",
-    "version":  4,
-    "updateId":  "ota-android-production-v4",
-    "createdAt":  "2026-06-17T08:11:01Z",
-    "bundleUrl":  "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v4.zip",
-    "sha256":  "c70a598acb5b95b7aa314d3b870afb4f45f70bcd88dbe217bdeed9e7e055521d",
-    "mandatory":  false,
-    "disabled":  false,
-    "message":  "Push notification fix - channelId hrm-general",
-    "minAppVersion":  "",
-    "apkDownloadUrl":  "",
-    "changelog":  [
-
-                  ],
-    "bundleSize":  5583397
+  "platform": "android",
+  "channel": "production",
+  "runtimeVersion": "android-1.0.0-hermes-rn081",
+  "version": 4,
+  "updateId": "ota-android-production-v4",
+  "createdAt": "2026-06-17T08:11:01Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v4.zip",
+  "sha256": "c70a598acb5b95b7aa314d3b870afb4f45f70bcd88dbe217bdeed9e7e055521d",
+  "mandatory": false,
+  "disabled": false,
+  "message": "Push notification fix - channelId hrm-general",
+  "minAppVersion": "1.0.1",
+  "apkDownloadUrl": "https://drive.google.com/uc?export=download&id=1HfKYV-s76EWv21iffoozz8r_05lcT7ME",
+  "changelog": [
+    "Perbaikan push notification"
+  ],
+  "bundleSize": 5583397
 }
