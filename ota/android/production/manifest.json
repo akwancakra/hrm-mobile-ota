@@ -2,16 +2,16 @@
   "platform": "android",
   "channel": "production",
   "runtimeVersion": "android-1.0.0-hermes-rn081",
-  "version": 10,
-  "updateId": "ota-android-production-v10",
-  "createdAt": "2026-06-17T13:13:00Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v10.zip",
-  "sha256": "102a163d01f1240ef37816b63ea9256d6a9cc061e2314a53095a112e7266abe3",
+  "version": 13,
+  "updateId": "ota-android-production-v13",
+  "createdAt": "2026-06-17T13:22:57Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v13.zip",
+  "sha256": "c0b0a0b3035f8766b1326d4c1ebc226aaf0c507788a9318897244d0a7540113a",
   "mandatory": false,
   "disabled": false,
-  "message": "fix env production + script EnvProduction switch",
+  "message": "v13 final",
   "minAppVersion": "1.0.1",
   "apkDownloadUrl": "https://drive.google.com/uc?export=download&id=1HfKYV-s76EWv21iffoozz8r_05lcT7ME",
   "changelog": [],
-  "bundleSize": 5583563
+  "bundleSize": 5583567
 }
