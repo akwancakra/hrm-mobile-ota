@@ -2,12 +2,12 @@
   "platform": "android",
   "channel": "production",
   "runtimeVersion": "android-1.0.0-hermes-rn081",
-  "version": 15,
-  "updateId": "ota-android-production-v15",
-  "createdAt": "2026-06-21T14:59:29Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v15.zip",
-  "sha256": "6a888a428265f0ab4cc6fb85a7dd9d32163c890669dca82858c54832655cd18a",
+  "version": 16,
+  "updateId": "ota-android-production-v16",
+  "createdAt": "2026-06-27T17:27:05Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v16.zip",
+  "sha256": "f54cad67434099b5d4d214a3279b9914c0b0352cea279fd2155b3c8eab211c5b",
   "mandatory": false,
   "disabled": false,
-  "message": "feat: fix last meet online"
+  "message": "feat: add GitHub Actions workflow to automate OTA updates for production environment"
 }

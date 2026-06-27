@@ -2,12 +2,12 @@
   "platform": "ios",
   "channel": "production",
   "runtimeVersion": "ios-1.0.0-hermes-rn081",
-  "version": 2,
-  "updateId": "ota-ios-production-v2",
-  "createdAt": "2026-06-08T17:34:18Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v2.zip",
-  "sha256": "d9f283bde637ca8b44044868dd1b5d0edfdaa306d656bf46db1d551e191a39fa",
+  "version": 16,
+  "updateId": "ota-ios-production-v16",
+  "createdAt": "2026-06-27T17:28:47Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v16.zip",
+  "sha256": "1a26eeb3e6f517d4682532f0e2415ee60c2d5e8744f97ca03dc2294d0ab78ce0",
   "mandatory": false,
   "disabled": false,
-  "message": "Fix update sheet doesnt come up"
+  "message": "feat: add GitHub Actions workflow to automate OTA updates for production environment"
 }
