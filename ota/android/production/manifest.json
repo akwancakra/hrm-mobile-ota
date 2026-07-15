@@ -2,14 +2,16 @@
   "platform": "android",
   "channel": "production",
   "runtimeVersion": "android-1.0.0-hermes-rn081",
-  "version": 17,
-  "updateId": "ota-android-production-v17",
-  "createdAt": "2026-07-05T16:13:35Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v17.zip",
-  "sha256": "3f5b5874c4cc4cd40267738c93378494bc68cdd80817bf1de6da3af1290ff093",
+  "version": 18,
+  "updateId": "ota-android-production-v18",
+  "createdAt": "2026-07-15T11:22:10Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v18.zip",
+  "sha256": "b9e6e563541ab4b917552c5e4dd22693ae40445459e3be4f710146252b9c3d52",
   "mandatory": false,
   "disabled": false,
-  "message": "feat: add pre-commit hook to validate OTA build before committing",
-  "minAppVersion": "1.1.0",
-  "apkDownloadUrl": "https://github.com/akwancakra/hrm-mobile-arsitekhijau/releases/download/v1.1.0/HRM_Arsitekhijau_1.1.0.apk"
+  "changelog": [
+    "Fix Waktu Kerja",
+    "Memperbaiki tampilan tab akun",
+    "Memperbaiki logik kode pada berbagai pengajuan"
+  ]
 }

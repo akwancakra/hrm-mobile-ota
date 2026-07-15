@@ -2,12 +2,16 @@
   "platform": "ios",
   "channel": "production",
   "runtimeVersion": "ios-1.0.0-hermes-rn081",
-  "version": 17,
-  "updateId": "ota-ios-production-v17",
-  "createdAt": "2026-07-05T16:15:18Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v17.zip",
-  "sha256": "6382f1e3f3f78380f49122aa85ed7aa49e9c34f4b91fba5713b1ee1623638b49",
+  "version": 18,
+  "updateId": "ota-ios-production-v18",
+  "createdAt": "2026-07-15T11:23:56Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v18.zip",
+  "sha256": "3e6d2abcb43cfa333a1d3cf0fb0f60f653f3fe863bc9f44a14813b1bc1b23942",
   "mandatory": false,
   "disabled": false,
-  "message": "feat: add pre-commit hook to validate OTA build before committing"
+  "changelog": [
+    "Fix Waktu Kerja",
+    "Memperbaiki tampilan tab akun",
+    "Memperbaiki logik kode pada berbagai pengajuan"
+  ]
 }
