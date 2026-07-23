@@ -2,18 +2,15 @@
   "platform": "android",
   "channel": "production",
   "runtimeVersion": "android-1.0.0-hermes-rn081",
-  "version": 18,
-  "updateId": "ota-android-production-v18",
-  "createdAt": "2026-07-15T11:22:10Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v18.zip",
-  "sha256": "b9e6e563541ab4b917552c5e4dd22693ae40445459e3be4f710146252b9c3d52",
+  "version": 19,
+  "updateId": "ota-android-production-v19",
+  "createdAt": "2026-07-23T15:39:32Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v19.zip",
+  "sha256": "3d5617606ebb6054ba85472c7dab5c425e1331149b9663dbc83ed64eb21557ec",
   "mandatory": false,
   "disabled": false,
   "changelog": [
-    "Fix Waktu Kerja",
-    "Memperbaiki tampilan tab akun",
-    "Memperbaiki logik kode pada berbagai pengajuan"
-  ],
-  "minAppVersion": "1.1.0",
-  "apkDownloadUrl": "https://drive.google.com/file/d/1vwyUVMhhTQ5Dy1cYA0_Ay7aiqy7Iue5G/view?usp=sharing"
+    "Approval screen empty list untuk line approver non-admin",
+    "Perbaikan notifikasi pengajuan"
+  ]
 }
