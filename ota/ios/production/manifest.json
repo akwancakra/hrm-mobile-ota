@@ -1,12 +1,12 @@
 {
   "platform": "ios",
   "channel": "production",
-  "runtimeVersion": "ios-1.0.0-hermes-rn081",
-  "version": 21,
-  "updateId": "ota-ios-production-v21",
-  "createdAt": "2026-07-29T14:16:34Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v21.zip",
-  "sha256": "9a63003ef5e36ccb41e156f4dd1ff1a6fab1cf2cf6658c4ddb93efd189722731",
+  "runtimeVersion": "ios-1.1.0-hermes-rn081",
+  "version": 22,
+  "updateId": "ota-ios-production-v22",
+  "createdAt": "2026-07-29T14:33:25Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v22.zip",
+  "sha256": "8bd3bd78d848394b416d1002efc0c9506315d257cafdba80966074375ae080fc",
   "mandatory": false,
   "disabled": false,
   "message": "Perbaikan Menyeluruh pada HRM"
