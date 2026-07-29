@@ -2,12 +2,12 @@
   "platform": "android",
   "channel": "production",
   "runtimeVersion": "android-1.0.0-hermes-rn081",
-  "version": 20,
-  "updateId": "ota-android-production-v20",
-  "createdAt": "2026-07-29T14:06:03Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v20.zip",
-  "sha256": "4956fbd7adc01f050a09cb4dd8ca4e47c80dd35a738df0d9eaff4d10545be71e",
+  "version": 21,
+  "updateId": "ota-android-production-v21",
+  "createdAt": "2026-07-29T14:14:56Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v21.zip",
+  "sha256": "6215363b08817413bbb1b7e8a82254656b536ba838de3f6ae0a612961bcbd625",
   "mandatory": false,
   "disabled": false,
-  "message": "Perbaikan besar HRM"
+  "message": "Perbaikan Menyeluruh pada HRM"
 }
