@@ -2,15 +2,12 @@
   "platform": "ios",
   "channel": "production",
   "runtimeVersion": "ios-1.0.0-hermes-rn081",
-  "version": 19,
-  "updateId": "ota-ios-production-v19",
-  "createdAt": "2026-07-23T15:41:17Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v19.zip",
-  "sha256": "b9e09f40b7c67a373ca1d010625db7bee0306887b0a41cfaaad2899e1e35f8b2",
+  "version": 20,
+  "updateId": "ota-ios-production-v20",
+  "createdAt": "2026-07-29T14:07:46Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v20.zip",
+  "sha256": "2b3a9d4160d19ef00b2c6ca09bcc98202df663a872b96b8faeca0f5ffc46188d",
   "mandatory": false,
   "disabled": false,
-  "changelog": [
-    "Approval screen empty list untuk line approver non-admin",
-    "Perbaikan notifikasi pengajuan"
-  ]
+  "message": "Perbaikan besar HRM"
 }
