@@ -2,12 +2,12 @@
   "platform": "android",
   "channel": "production",
   "runtimeVersion": "android-1.1.0-hermes-rn081",
-  "version": 22,
-  "updateId": "ota-android-production-v22",
-  "createdAt": "2026-07-29T14:31:39Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v22.zip",
-  "sha256": "3a3bc518df7f2b5efabd864f3d2204df33beb0a919d36bbac382aaa422a5f822",
+  "version": 23,
+  "updateId": "ota-android-production-v23",
+  "createdAt": "2026-08-01T09:55:05Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v23.zip",
+  "sha256": "050d2848ec11794a14ca113311410023af39a5d9040b87e91a07b378339340db",
   "mandatory": false,
   "disabled": false,
-  "message": "Perbaikan Menyeluruh pada HRM"
+  "message": "Perbaikan terhadap fitur request-approval"
 }
