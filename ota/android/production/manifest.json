@@ -2,12 +2,12 @@
   "platform": "android",
   "channel": "production",
   "runtimeVersion": "android-1.1.0-hermes-rn081",
-  "version": 23,
-  "updateId": "ota-android-production-v23",
-  "createdAt": "2026-08-01T09:55:05Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v23.zip",
-  "sha256": "050d2848ec11794a14ca113311410023af39a5d9040b87e91a07b378339340db",
+  "version": 24,
+  "updateId": "ota-android-production-v24",
+  "createdAt": "2026-08-02T16:58:13Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v24.zip",
+  "sha256": "14c0a99f5e6a97964a11914786c4f3c25180728af0598ec492c092f0e2e78108",
   "mandatory": false,
   "disabled": false,
-  "message": "Perbaikan terhadap fitur request-approval"
+  "message": "Perbaikan OTA update dialog"
 }

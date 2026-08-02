@@ -2,12 +2,12 @@
   "platform": "ios",
   "channel": "production",
   "runtimeVersion": "ios-1.1.0-hermes-rn081",
-  "version": 23,
-  "updateId": "ota-ios-production-v23",
-  "createdAt": "2026-08-01T09:56:26Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v23.zip",
-  "sha256": "2f3da452dc9c700d0cbd686f03312118f1846c19c8351ed20b7242eb20da1e3d",
+  "version": 24,
+  "updateId": "ota-ios-production-v24",
+  "createdAt": "2026-08-02T16:59:45Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v24.zip",
+  "sha256": "d1e75f0068463525085c3b1dc346b07164352aadd8fffc3e8714130a50bb2886",
   "mandatory": false,
   "disabled": false,
-  "message": "Perbaikan terhadap fitur request-approval"
+  "message": "Perbaikan OTA update dialog"
 }
