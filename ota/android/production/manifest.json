@@ -2,12 +2,12 @@
   "platform": "android",
   "channel": "production",
   "runtimeVersion": "android-1.1.0-hermes-rn081",
-  "version": 24,
-  "updateId": "ota-android-production-v24",
-  "createdAt": "2026-08-02T16:58:13Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v24.zip",
-  "sha256": "14c0a99f5e6a97964a11914786c4f3c25180728af0598ec492c092f0e2e78108",
+  "version": 25,
+  "updateId": "ota-android-production-v25",
+  "createdAt": "2026-08-02T17:08:55Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v25.zip",
+  "sha256": "fb63476f5363f71e277980089d380300002f7260d797a0c5b30df83478cd1fb4",
   "mandatory": false,
   "disabled": false,
-  "message": "Perbaikan OTA update dialog"
+  "message": "Update API dan OTA"
 }
