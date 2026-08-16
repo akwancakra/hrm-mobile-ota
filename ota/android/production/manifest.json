@@ -2,12 +2,12 @@
   "platform": "android",
   "channel": "production",
   "runtimeVersion": "android-1.1.0-hermes-rn081",
-  "version": 25,
-  "updateId": "ota-android-production-v25",
-  "createdAt": "2026-08-02T17:08:55Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v25.zip",
-  "sha256": "fb63476f5363f71e277980089d380300002f7260d797a0c5b30df83478cd1fb4",
+  "version": 26,
+  "updateId": "ota-android-production-v26",
+  "createdAt": "2026-08-16T00:50:48Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/android/production/bundles/ota-android-production-v26.zip",
+  "sha256": "f7fbe7418bdcfe113059a7c28bfb286b6ed4725b72bc4914c217c4c0844f8b5d",
   "mandatory": false,
   "disabled": false,
-  "message": "Update API dan OTA"
+  "message": "Update Attendance Creation"
 }

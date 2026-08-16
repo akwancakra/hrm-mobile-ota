@@ -2,12 +2,12 @@
   "platform": "ios",
   "channel": "production",
   "runtimeVersion": "ios-1.1.0-hermes-rn081",
-  "version": 25,
-  "updateId": "ota-ios-production-v25",
-  "createdAt": "2026-08-02T17:10:16Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v25.zip",
-  "sha256": "4ecea456b807146726e0ea29a0fba0ae40ad3b6df34809879e7cbc8fafe50dd4",
+  "version": 26,
+  "updateId": "ota-ios-production-v26",
+  "createdAt": "2026-08-16T00:52:45Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v26.zip",
+  "sha256": "2d2e5822d099e81d55e7c5a899867fe55e2ec1823651ace8a98b7d2b58ec69eb",
   "mandatory": false,
   "disabled": false,
-  "message": "Update API dan OTA"
+  "message": "Update Attendance Creation"
 }
