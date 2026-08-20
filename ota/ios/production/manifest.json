@@ -2,12 +2,12 @@
   "platform": "ios",
   "channel": "production",
   "runtimeVersion": "ios-1.1.0-hermes-rn081",
-  "version": 26,
-  "updateId": "ota-ios-production-v26",
-  "createdAt": "2026-08-16T00:52:45Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v26.zip",
-  "sha256": "2d2e5822d099e81d55e7c5a899867fe55e2ec1823651ace8a98b7d2b58ec69eb",
+  "version": 27,
+  "updateId": "ota-ios-production-v27",
+  "createdAt": "2026-08-20T03:31:52Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v27.zip",
+  "sha256": "e1feb7b0d843aa024d59a48cef3ebacb66475a40bed373c255cfb6e04cc54bb0",
   "mandatory": false,
   "disabled": false,
-  "message": "Update Attendance Creation"
+  "message": "Menambahkan update button di login page"
 }
