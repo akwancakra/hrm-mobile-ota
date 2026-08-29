@@ -2,12 +2,12 @@
   "platform": "ios",
   "channel": "production",
   "runtimeVersion": "ios-1.1.0-hermes-rn081",
-  "version": 28,
-  "updateId": "ota-ios-production-v28",
-  "createdAt": "2026-08-26T18:21:16Z",
-  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v28.zip",
-  "sha256": "c8fb442a424c614543a31ec8bc3e9bf36daf836d193a16b10dafdf358115b51f",
+  "version": 29,
+  "updateId": "ota-ios-production-v29",
+  "createdAt": "2026-08-29T08:47:30Z",
+  "bundleUrl": "https://akwancakra.github.io/hrm-mobile-ota/ota/ios/production/bundles/ota-ios-production-v29.zip",
+  "sha256": "18557e4a4c044a93f074fc610db1f6ad100b7af96d5f2ca7743a6ab76f931971",
   "mandatory": false,
   "disabled": false,
-  "message": "Perbaikan pada sisi payslip/payroll"
+  "message": "Perbaikan Fitur Cuti"
 }
